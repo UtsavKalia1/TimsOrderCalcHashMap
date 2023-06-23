@@ -18,7 +18,7 @@ public class GiftCard extends BaseMerchandise implements Imerchandise {
         return price;
     }
     public String toString(){
-        return getFeature() + "has price"+ getPrice();
+        return getFeature() + " has price "+ getPrice();
     }
 
     @Override

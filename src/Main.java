@@ -1,5 +1,4 @@
-import Entities.Coffee;
-import Entities.Imerchandise;
+import Entities.*;
 
 import javax.swing.text.html.HTMLDocument;
 import java.util.*;
@@ -48,6 +47,55 @@ public class Main {
                                 order.put(coffee, quantity);
                                 break;
                             }
+                        case 2:
+                            GiftCard giftCard = new GiftCard();
+                            System.out.println(giftCard);
+                            System.out.println("\n 1.Order" +
+                                    "\n2.Continue with other Products");
+                            num = scanner.nextInt();
+                            if (num == 1) {
+                                System.out.println("Enter the Quantity of your order:");
+                                int quantity;
+                                quantity = scanner.nextInt();
+//                                if (order.containsKey(coffee)){
+//                                    quantity++;
+//                            }
+                                order.put(giftCard, quantity);
+                                break;
+                            }
+                        case 3:
+                            HockeyCard hockeyCard = new HockeyCard();
+                            System.out.println(hockeyCard);
+                            System.out.println("\n 1.Order" +
+                                    "\n2.Continue with other Products");
+                            num = scanner.nextInt();
+                            if (num == 1) {
+                                System.out.println("Enter the Quantity of your order:");
+                                int quantity;
+                                quantity = scanner.nextInt();
+//                                if (order.containsKey(coffee)){
+//                                    quantity++;
+//                            }
+                                order.put(hockeyCard, quantity);
+                                break;
+                            }
+                        case 4:
+                            Mug mug = new Mug();
+                            System.out.println(mug);
+                            System.out.println("\n 1.Order" +
+                                    "\n2.Continue with other Products");
+                            num = scanner.nextInt();
+                            if (num == 1) {
+                                System.out.println("Enter the Quantity of your order:");
+                                int quantity;
+                                quantity = scanner.nextInt();
+//                                if (order.containsKey(coffee)){
+//                                    quantity++;
+//                            }
+                                order.put(mug, quantity);
+                                break;
+                            }
+
 
                         default:
                             System.out.println("Please choose the right choice");

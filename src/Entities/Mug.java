@@ -6,7 +6,7 @@ import Entities.Imerchandise;
 import java.util.Objects;
 
 public class Mug extends BaseMerchandise implements Imerchandise {
-    String feature = "Entities.Mug";
+    String feature = "Mug";
     int price = 30;
     @Override
     public String getFeature() {
@@ -18,7 +18,7 @@ public class Mug extends BaseMerchandise implements Imerchandise {
         return price;
     }
     public String toString(){
-        return getFeature() + "has price"+ getPrice();
+        return getFeature() + " has price "+ getPrice();
     }
 
     @Override
